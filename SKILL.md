@@ -183,7 +183,7 @@ Store as `config.distribution.*`:
   "resend": {
     "envFile": "~/.ai-builder-brief/.env",
     "envVar": "RESEND_API_KEY",
-    "fromAddress": "briefing@yourdomain.com",
+    "fromAddress": "ai_briefing@yourdomain.com",
     "fromName": "AI Builder Brief"
   }
 }

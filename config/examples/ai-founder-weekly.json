@@ -62,7 +62,7 @@
     "resend": {
       "envFile": "~/.ai-builder-brief/.env",
       "envVar": "RESEND_API_KEY",
-      "fromAddress": "briefing@example-edtech.com",
+      "fromAddress": "ai_briefing@example-edtech.com",
       "fromName": "AI Founder Weekly"
     }
   },

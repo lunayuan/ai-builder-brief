@@ -55,7 +55,7 @@
     "resend": {
       "envFile": "~/.ai-builder-brief/.env",
       "envVar": "RESEND_API_KEY",
-      "fromAddress": "briefing@pm-user-domain.com",
+      "fromAddress": "ai_briefing@pm-user-domain.com",
       "fromName": "AI PM Daily"
     }
   },

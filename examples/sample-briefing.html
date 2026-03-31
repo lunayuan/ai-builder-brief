@@ -15,13 +15,13 @@
 <div style="padding:24px;border-bottom:2px solid #e2e8f0">
 <div style="font-size:11px;font-weight:700;color:#6366f1;text-transform:uppercase;letter-spacing:1.5px;margin-bottom:14px">Executive Summary</div>
 <ul style="margin:0;padding-left:20px;line-height:1.9;color:#334155">
-<li><strong>GPT-5.4 ships with 1M context + native computer use</strong> -- OpenAI's new flagship scores 75% on OSWorld, slightly above the human baseline. AI is no longer a chat tool; it's an autonomous digital coworker.</li>
-<li><strong>Gemini 3.1 Pro takes #1 on ARC-AGI-2</strong> -- 77.1% on pure logical reasoning. Best price-to-performance ratio among frontier models at $2/$12 per million tokens.</li>
-<li><strong>OpenClaw passes 210K GitHub stars</strong> -- fastest-growing open-source project in GitHub history. An agent that writes its own skills and extends its own capabilities.</li>
-<li><strong>GitHub Blog: top 10 open-source AI projects</strong> -- from MCP to multi-agents, the ecosystem is shifting from single models to orchestrated agent systems.</li>
+<li><strong>GPT-5.4 ships with 1M context + native computer use</strong> -- scores 75% on OSWorld, above the human baseline. AI is no longer a chat tool.</li>
+<li><strong>Gemini 3.1 Pro takes #1 on ARC-AGI-2</strong> -- 77.1% on logical reasoning. Best price-to-performance at $2/$12.</li>
+<li><strong>OpenClaw passes 210K GitHub stars</strong> -- an agent that writes its own skills. Fastest-growing open-source project in history.</li>
+<li><strong>Karpathy: "Humans are the bottleneck in AI research"</strong> -- open-sources autoresearch framework, argues for AI-driven research swarms.</li>
 </ul>
 <div style="margin-top:16px;padding:14px 16px;background:#fefce8;border-left:3px solid #eab308;font-size:13px;color:#854d0e;line-height:1.7">
-<strong>What to Watch:</strong> The frontier model race is now a three-way tie on raw capability -- differentiation is shifting to ecosystem, pricing, and agent tooling. MCP integration is becoming the connective tissue. If you're building agents, watch the MCP-to-OpenAPI proxy pattern.
+<strong>What to Watch:</strong> Frontier models are now a three-way tie on capability. Differentiation is shifting to agent tooling, MCP integration, and pricing. Karpathy's autoresearch pattern could change how every AI team does R&amp;D.
 </div>
 </div>
 
@@ -33,23 +33,18 @@
 </div>
 
 <div style="margin-bottom:18px">
-<strong>GPT-5.4: 1M context, native computer use, 47% token reduction</strong> -- OpenAI's new flagship replaces GPT-5.3 Codex. Adds tool search that cuts token usage in tool-heavy workflows by 47%. Scores 75% on OSWorld -- above the human baseline of 72.4%. <a href="https://llm-stats.com/ai-news" style="color:#9ca3af;text-decoration:none;font-size:13px">LLM Stats</a><br>
-<em style="color:#6366f1;font-size:13px">Your implication: The 47% token reduction in tool-heavy workflows directly affects your agent's cost economics. Worth benchmarking against your current setup.</em>
+<strong>GPT-5.4: 1M context, native computer use, 47% token reduction</strong> -- Replaces GPT-5.3 Codex. Tool search cuts token usage by 47% in tool-heavy workflows. Scores 75% on OSWorld, above the human baseline of 72.4%. API at $2.50/$15 per million tokens. <a href="https://llm-stats.com/ai-news" style="color:#9ca3af;text-decoration:none;font-size:13px">LLM Stats</a><br>
+<em style="color:#6366f1;font-size:13px">Your implication: The 47% token reduction directly affects your agent's cost economics. Worth benchmarking against your current setup.</em>
 </div>
 
 <div style="margin-bottom:18px">
-<strong>Gemini 3.1 Pro scores 77.1% on ARC-AGI-2 -- #1 in logical reasoning</strong> -- Best all-around general-purpose model available. $2/$12 pricing makes it the best price-to-performance ratio among frontier models. <a href="https://lmcouncil.ai/benchmarks" style="color:#9ca3af;text-decoration:none;font-size:13px">LM Council</a><br>
-<em style="color:#6366f1;font-size:13px">Your implication: If you're cost-sensitive and need strong reasoning, Gemini 3.1 Pro at $2/$12 is hard to beat. The performance gap between frontier models is now negligible.</em>
-</div>
-
-<div style="margin-bottom:18px">
-<strong>Claude Opus 4.6 leads SWE-Bench at 80.8%</strong> -- Beats GPT-5.4's 77.2% on real-world software engineering tasks. Sonnet 4.6 delivers near-Opus performance at Sonnet pricing. <a href="https://renovateqr.com/blog/ai-model-releases-2026" style="color:#9ca3af;text-decoration:none;font-size:13px">Renovate QR</a><br>
-<em style="color:#6366f1;font-size:13px">Your implication: For coding-heavy workflows, Claude Opus 4.6 is the current leader. Sonnet 4.6 is the sweet spot if you need to balance quality and cost.</em>
+<strong>Gemini 3.1 Pro: #1 on ARC-AGI-2 at 77.1%</strong> -- Best all-around general-purpose model. $2/$12 pricing makes it the best price-to-performance ratio among frontier models. <a href="https://lmcouncil.ai/benchmarks" style="color:#9ca3af;text-decoration:none;font-size:13px">LM Council</a><br>
+<em style="color:#6366f1;font-size:13px">Your implication: If you're cost-sensitive and need strong reasoning, Gemini 3.1 Pro at $2/$12 is hard to beat.</em>
 </div>
 
 <div style="margin-bottom:0">
-<strong>The era of text-only models is over</strong> -- GPT-5.4, Gemini 3.1, and Claude 4.6 are all natively multimodal. Text, images, and tool use in a single system. Choosing between them now comes down to ecosystem fit and price. <a href="https://designforonline.com/the-best-ai-models-so-far-in-2026/" style="color:#9ca3af;text-decoration:none;font-size:13px">Design for Online</a><br>
-<em style="color:#6366f1;font-size:13px">Your implication: Model selection is no longer about capability gaps. It's about which ecosystem your tools integrate with and which API pricing fits your unit economics.</em>
+<strong>Claude Opus 4.6 leads SWE-Bench at 80.8%</strong> -- Beats GPT-5.4's 77.2% on real-world software engineering. Sonnet 4.6 delivers near-Opus performance at Sonnet pricing. <a href="https://renovateqr.com/blog/ai-model-releases-2026" style="color:#9ca3af;text-decoration:none;font-size:13px">Renovate QR</a><br>
+<em style="color:#6366f1;font-size:13px">Your implication: For coding-heavy workflows, Claude Opus 4.6 is the current leader. Sonnet 4.6 is the sweet spot for quality vs. cost.</em>
 </div>
 </div>
 
@@ -61,23 +56,18 @@
 </div>
 
 <div style="margin-bottom:18px">
-<strong>OpenClaw: the AI agent that writes its own skills</strong> -- Built by indie dev Peter Steinberger, OpenClaw runs fully autonomous agents locally on personal hardware. It browses the web, fills forms, runs shell commands, writes code, controls smart home devices -- and writes its own new skills to extend itself. 210K+ GitHub stars. <a href="https://www.kdnuggets.com/openclaw-explained-the-free-ai-agent-tool-going-viral-already-in-2026" style="color:#9ca3af;text-decoration:none;font-size:13px">KDnuggets</a><br>
-<em style="color:#ec4899;font-size:13px">Your implication: Self-extending agents are the pattern to watch. If your agent can learn new capabilities without manual skill authoring, that's a massive distribution advantage.</em>
+<strong>OpenClaw: the agent that writes its own skills</strong> -- Built by indie dev Peter Steinberger. Runs locally, browses the web, executes code, controls devices -- and extends its own capabilities by writing new skills. 210K+ stars. <a href="https://www.kdnuggets.com/openclaw-explained-the-free-ai-agent-tool-going-viral-already-in-2026" style="color:#9ca3af;text-decoration:none;font-size:13px">KDnuggets</a><br>
+<em style="color:#ec4899;font-size:13px">Your implication: Self-extending agents are the pattern to watch. If your agent can learn new capabilities without manual skill authoring, that's a distribution advantage.</em>
 </div>
 
 <div style="margin-bottom:18px">
-<strong>Cursor Composer 2: autonomous multi-file coding agent</strong> -- Describe what you want built and Composer 2 plans implementation across your entire codebase and executes it. Competing directly with Claude Code's agentic mode. <a href="https://blog.mean.ceo/new-ai-model-releases-news-march-2026/" style="color:#9ca3af;text-decoration:none;font-size:13px">Mean CEO</a><br>
-<em style="color:#ec4899;font-size:13px">Your implication: Agentic coding tools are converging on the same pattern -- describe intent, agent plans and executes. The winner will be the one with the best context management.</em>
-</div>
-
-<div style="margin-bottom:18px">
-<strong>Kits AI: "studio-quality" AI music goes viral</strong> -- Independent producers releasing tracks that sound like they feature A-list vocalists. Custom voice model training with 2x processing speed. AI is crossing from text/code into creative production. <a href="https://videoreddit.edu.vn/%F0%9F%8E%A4-kits-ai-2026-the-studio-quality-music-revolution/" style="color:#9ca3af;text-decoration:none;font-size:13px">Video Reddit</a><br>
-<em style="color:#ec4899;font-size:13px">Your implication: AI creative tools are hitting the quality threshold where output is indistinguishable from professional work. Watch for this pattern in your own domain.</em>
+<strong>Cursor Composer 2: autonomous multi-file coding</strong> -- Describe what you want, Composer 2 plans and executes across your entire codebase. Competing directly with Claude Code's agentic mode. <a href="https://blog.mean.ceo/new-ai-model-releases-news-march-2026/" style="color:#9ca3af;text-decoration:none;font-size:13px">Mean CEO</a><br>
+<em style="color:#ec4899;font-size:13px">Your implication: Agentic coding tools are converging on the same pattern. The winner will be the one with the best context management.</em>
 </div>
 
 <div style="margin-bottom:0">
-<strong>Boston Dynamics x Google DeepMind: Gemini-powered Atlas</strong> -- CES 2026 featured the electric Atlas robot with integrated Gemini Robotics models. Humanoid robots are moving from demos to deployable systems. <a href="https://www.crescendo.ai/news/latest-ai-news-and-updates" style="color:#9ca3af;text-decoration:none;font-size:13px">Crescendo AI</a><br>
-<em style="color:#ec4899;font-size:13px">Your implication: Physical AI is entering its foundation-model moment. If you're building software agents, the same orchestration patterns will apply to robot agents.</em>
+<strong>Boston Dynamics x DeepMind: Gemini-powered Atlas</strong> -- CES 2026 featured the electric Atlas with integrated Gemini Robotics models. Humanoid robots moving from demos to deployable systems. <a href="https://www.crescendo.ai/news/latest-ai-news-and-updates" style="color:#9ca3af;text-decoration:none;font-size:13px">Crescendo AI</a><br>
+<em style="color:#ec4899;font-size:13px">Your implication: Physical AI is entering its foundation-model moment. The same orchestration patterns for software agents will apply to robots.</em>
 </div>
 </div>
 
@@ -89,23 +79,41 @@
 </div>
 
 <div style="margin-bottom:18px">
-<strong>GitHub Blog: "From MCP to multi-agents" -- top 10 open-source AI projects</strong> -- GitHub's official roundup of the most important AI repos right now. The ecosystem is shifting from single-model apps to orchestrated multi-agent systems with MCP as the connective tissue. <a href="https://github.blog/open-source/maintainers/from-mcp-to-multi-agents-the-top-10-open-source-ai-projects-on-github-right-now-and-why-they-matter/" style="color:#9ca3af;text-decoration:none;font-size:13px">GitHub Blog</a><br>
-<em style="color:#10b981;font-size:13px">Your implication: Required reading. This is the official map of where the agent ecosystem is heading. If you're building skills or tools, align with these projects.</em>
+<strong>GitHub Blog: "From MCP to multi-agents" -- top 10 open-source AI projects</strong> -- The official map of where the agent ecosystem is heading. Shift from single-model apps to orchestrated multi-agent systems with MCP as connective tissue. <a href="https://github.blog/open-source/maintainers/from-mcp-to-multi-agents-the-top-10-open-source-ai-projects-on-github-right-now-and-why-they-matter/" style="color:#9ca3af;text-decoration:none;font-size:13px">GitHub Blog</a><br>
+<em style="color:#10b981;font-size:13px">Your implication: Required reading. If you're building skills or tools, align with these projects and the MCP ecosystem.</em>
 </div>
 
 <div style="margin-bottom:18px">
-<strong>callstack/agent-skills: React Native skills for AI coding assistants</strong> -- A collection of agent-optimized skills that let coding assistants work with React Native projects. Pattern worth studying: domain-specific skill packs for vertical use cases. <a href="https://github.com/callstackincubator/agent-skills" style="color:#9ca3af;text-decoration:none;font-size:13px">GitHub</a><br>
-<em style="color:#10b981;font-size:13px">Your implication: Vertical skill packs (domain-specific agent capabilities) are emerging as a distribution pattern. Consider building skill packs for your own domain.</em>
-</div>
-
-<div style="margin-bottom:18px">
-<strong>Dify: visual workflow builder with MCP integration</strong> -- Includes RAG pipeline management, multi-model support, and now MCP integration. Lets non-developers build tool-using agents visually. <a href="https://medium.com/write-a-catalyst/top-ai-github-repositories-in-2026-e08af3e88314" style="color:#9ca3af;text-decoration:none;font-size:13px">Medium</a><br>
-<em style="color:#10b981;font-size:13px">Your implication: Visual agent builders are lowering the barrier to entry. If your product requires agent orchestration, consider whether your users should build agents themselves.</em>
+<strong>callstack/agent-skills: React Native skills for AI assistants</strong> -- Domain-specific skill packs that let coding agents work with React Native. The pattern: vertical skill collections for specific frameworks. <a href="https://github.com/callstackincubator/agent-skills" style="color:#9ca3af;text-decoration:none;font-size:13px">GitHub</a><br>
+<em style="color:#10b981;font-size:13px">Your implication: Vertical skill packs are emerging as a distribution pattern. Consider building skill packs for your own domain.</em>
 </div>
 
 <div style="margin-bottom:0">
-<strong>MCP-to-OpenAPI proxy: turning MCP tools into HTTP servers</strong> -- A proxy pattern that makes MCP tools compatible with standard RESTful OpenAPI interfaces. Bridges the gap between the MCP ecosystem and existing API infrastructure. <a href="https://www.mintmcp.com/blog/mcp-gateways-github-integration" style="color:#9ca3af;text-decoration:none;font-size:13px">MintMCP</a><br>
-<em style="color:#10b981;font-size:13px">Your implication: If you've built MCP tools, this proxy pattern instantly makes them accessible to any app that speaks REST. Great for distribution.</em>
+<strong>MCP-to-OpenAPI proxy: turning MCP tools into HTTP servers</strong> -- Bridges MCP ecosystem with standard REST interfaces. Any MCP tool becomes accessible to apps that speak OpenAPI. <a href="https://www.mintmcp.com/blog/mcp-gateways-github-integration" style="color:#9ca3af;text-decoration:none;font-size:13px">MintMCP</a><br>
+<em style="color:#10b981;font-size:13px">Your implication: If you've built MCP tools, this proxy instantly makes them accessible to any REST app. Great for distribution.</em>
+</div>
+</div>
+
+<!-- Category 4: Builder Voices -->
+<div style="padding:24px;border-bottom:1px solid #f1f5f9">
+<div style="display:flex;align-items:center;margin-bottom:16px">
+<span style="display:inline-block;width:28px;height:28px;background:#f59e0b;border-radius:6px;text-align:center;line-height:28px;font-size:14px;margin-right:10px">&#128172;</span>
+<span style="font-size:16px;font-weight:700;color:#1e293b">Builder Voices</span>
+</div>
+
+<div style="margin-bottom:18px">
+<strong>Andrej Karpathy: "Humans are the bottleneck in AI research"</strong> -- After open-sourcing his autoresearch framework, Karpathy argues: "You spin up a swarm of agents, have them collaborate to tune models, promote promising ideas to larger scales, and humans contribute on the edges." He also admits he hasn't typed a line of code since December. <a href="https://winbuzzer.com/2026/03/23/karpathy-humans-bottleneck-ai-research-xcxwbn/" style="color:#9ca3af;text-decoration:none;font-size:13px">Winbuzzer</a><br>
+<em style="color:#f59e0b;font-size:13px">Your implication: Karpathy's autoresearch pattern -- agent swarms doing R&amp;D with humans on the edges -- could change how every AI team operates. Worth studying the framework.</em>
+</div>
+
+<div style="margin-bottom:18px">
+<strong>Sam Altman: "The next few years are going to be a painful adjustment"</strong> -- At BlackRock Infrastructure Summit, Altman predicted cognitive capacity inside data centers will eclipse human capacity by late 2028. Warned of "very intense and uncomfortable debates" over reshaping society. Also: AI as a public utility, purchased like electricity. <a href="https://fortune.com/2026/03/12/sam-altman-ai-labor-capital-jobs-nobody-knows/" style="color:#9ca3af;text-decoration:none;font-size:13px">Fortune</a><br>
+<em style="color:#f59e0b;font-size:13px">Your implication: Altman's "intelligence as a utility" framing shapes what products get built next. If you're pricing AI features, think utility-model, not SaaS-model.</em>
+</div>
+
+<div style="margin-bottom:0">
+<strong>Garry Tan on "cyber psychosis" and shipping 10K lines/day with Claude Code</strong> -- YC's president open-sourced gstack (20K GitHub stars in days), admitted to sleeping 4 hours a night from AI-fueled building. Called it "the most intense creative experience of my career." Sparked debate: inspiration or burnout? <a href="https://techcrunch.com/2026/03/17/why-garry-tans-claude-code-setup-has-gotten-so-much-love-and-hate/" style="color:#9ca3af;text-decoration:none;font-size:13px">TechCrunch</a><br>
+<em style="color:#f59e0b;font-size:13px">Your implication: The gstack workflow is worth studying -- but the burnout signal is real. The builders who win long-term will be the ones who find sustainable AI-augmented rhythms.</em>
 </div>
 </div>
 
