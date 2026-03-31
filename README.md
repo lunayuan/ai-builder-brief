@@ -12,6 +12,18 @@ Built for people who build with AI. Not for people who just talk about it.
 
 **[See the full interactive sample](https://htmlpreview.github.io/?https://github.com/lunayuan/ai-builder-brief/blob/master/examples/sample-briefing.html)**
 
+## What It Scans For
+
+Every edition automatically searches for what matters most to AI builders:
+
+**Latest Models & Technology** — New model releases, benchmark results, pricing changes, capability jumps. Know when to switch models, when to wait, and how new releases affect your cost structure.
+
+**Trending Demos & Product Inspiration** — Viral AI products, impressive demos, breakout apps. See what other builders are shipping so you can spot patterns, get inspired, and stay ahead of what users will expect.
+
+**Popular Agent Skills & GitHub Repos** — Trending repos, new MCP tools, agent frameworks, skill packs gaining traction. Find tools that make your own agents smarter and discover what the open-source community is building.
+
+These are the defaults. You can add, remove, or rename categories during setup — or later, just by telling your agent.
+
 ## Quick Start
 
 1. Install:
@@ -42,7 +54,7 @@ The magic is the onboarding. These questions shape everything — from what gets
 | 7 | How often? | Daily or weekly |
 | 8 | How to deliver? | Email, Gmail draft, or local file |
 
-When you pick your topics, the agent asks a follow-up: *"Why is this important to you specifically?"* That answer becomes the lens for every implication line. Two people tracking "AI for PMs" get different briefings based on their reasons.
+When you pick your topics, the agent asks a follow-up: *"Why is this important to you specifically?"* That answer becomes the lens for every implication line. Two people tracking the same topic get different briefings based on their reasons.
 
 ## What You Get
 
@@ -53,30 +65,30 @@ When you pick your topics, the agent asks a follow-up: *"Why is this important t
 - **"What to Watch"** — forward-looking items for the coming days
 - **Deduplication** — never see the same story twice across editions
 
-## Default AI Sources & Watch List
+## Default Watch List
 
-Out of the box, AI Builder Brief searches across the AI ecosystem. You can customize everything, but here's what it tracks by default:
+Out of the box, AI Builder Brief tracks the builders and orgs shaping the AI ecosystem. You can customize everything, but here's the starting lineup:
 
 **Builders & Leaders**
 
-Andrej Karpathy, Sam Altman, Dan Shipper, Swyx, Peter Yang, Garry Tan, Amjad Masad, Matt Turck, Aaron Levie, Boris Cherny, Tomer Cohen, Claire Vo, Chip Huyen, Ravi Mehta, Elena Verna, Ethan Smith, Jenny Wen, Nick Turley, Howie Liu, Asha Sharma, Bret Taylor, Marc Andreessen, Fei-Fei Li, Joy Buolamwini, Sasha Luccioni, Kyle Poyar, Grant Lee, Eoghan McCabe, Jason Lemkin, Jeanne Grosser
+Andrej Karpathy, Sam Altman, Dan Shipper, Swyx, Peter Yang, Garry Tan, Amjad Masad, Matt Turck, Aaron Levie, Boris Cherny, Tomer Cohen, Claire Vo, Chip Huyen, Ravi Mehta, Elena Verna, Ethan Smith, Jenny Wen, Nick Turley, Howie Liu, Asha Sharma, Bret Taylor, Marc Andreessen, Fei-Fei Li, Kyle Poyar, Grant Lee, Eoghan McCabe
 
 **Organizations**
 
-OpenAI, Anthropic, Google DeepMind, Hugging Face, Lovable, Replit, Gamma, Jasper AI, Canva, HeyGen, ElevenLabs, Graphite, Algorithmic Justice League
+OpenAI, Anthropic, Google DeepMind, Hugging Face, Lovable, Replit, Cursor, Gamma, ElevenLabs, HeyGen, Graphite
 
 **Curated Sources**
 
-Lenny's Newsletter, Every by Dan Shipper, Growth Unhinged
+Lenny's Newsletter, Every by Dan Shipper, Growth Unhinged, GitHub Blog
 
 ## Example Setups
 
-| Who | Focus | What they track |
-|-----|-------|----------------|
-| **AI PM** | Tools, workflows, vibe coding | AI for PMs, AI Products, Growth & Distribution |
-| **AI Founder** | Funding, launches, GTM | Builders & Trends, Competitors, Education & EdTech |
-| **AI Team** | Shared competitive intel | Enterprise AI, Agents, Competitors |
-| **AI Researcher** | Models, papers, benchmarks | Builders & Trends, LLM Updates, AI Ethics |
+| Who | Focus | Default categories |
+|-----|-------|--------------------|
+| **AI Builder** | Models, tools, repos | Latest Models & Tech, Trending Demos, Popular Agent Skills |
+| **AI PM** | Workflows, products | Latest Models, AI Products, Growth & Distribution |
+| **AI Founder** | Funding, competitive landscape | Trending Demos, Funding & Launches, Competitors |
+| **AI Team** | Shared competitive intel | Enterprise AI, Agents & Automation, Competitors |
 
 See `config/examples/` for complete sample configurations.
 
@@ -94,7 +106,7 @@ Tell your agent conversationally — no files to edit:
 
 - "Add Anthropic to my watch list"
 - "Switch to daily briefings"
-- "The AI for Good section was great — emphasize it"
+- "Emphasize the GitHub repos section"
 - "Skip the funding noise unless there's a major round"
 - "Add sarah@team.com to the distribution list"
 - "Show me my current settings"
