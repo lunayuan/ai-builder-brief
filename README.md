@@ -22,6 +22,8 @@ Every edition automatically searches for what matters most to AI builders:
 
 **Popular Agent Skills & GitHub Repos** — Trending repos, new MCP tools, agent frameworks, skill packs gaining traction. Find tools that make your own agents smarter and discover what the open-source community is building.
 
+**Builder Voices** — Notable quotes and takes from the builders on your watch list. What are Andrej Karpathy, Sam Altman, and the people you follow actually saying this week? Not news *about* them — their own words, opinions, and predictions.
+
 These are the defaults. You can add, remove, or rename categories during setup — or later, just by telling your agent.
 
 ## Quick Start
@@ -85,7 +87,7 @@ Lenny's Newsletter, Every by Dan Shipper, Growth Unhinged, GitHub Blog
 
 | Who | Focus | Default categories |
 |-----|-------|--------------------|
-| **AI Builder** | Models, tools, repos | Latest Models & Tech, Trending Demos, Popular Agent Skills |
+| **AI Builder** | Models, tools, repos, voices | Latest Models, Trending Demos, Agent Skills, Builder Voices |
 | **AI PM** | Workflows, products | Latest Models, AI Products, Growth & Distribution |
 | **AI Founder** | Funding, competitive landscape | Trending Demos, Funding & Launches, Competitors |
 | **AI Team** | Shared competitive intel | Enterprise AI, Agents & Automation, Competitors |
