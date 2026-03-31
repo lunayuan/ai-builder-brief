@@ -2,10 +2,7 @@
 
 **Your daily AI signal, filtered through YOUR world.**
 
-[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
-[![Works with Claude Code](https://img.shields.io/badge/Works%20with-Claude%20Code-blueviolet)](https://claude.ai/code)
-
-Most people track AI through LinkedIn noise, forwarded articles, and "did you see the OpenAI thing?" in Slack.
+Most people get AI news from LinkedIn, X, people they follow, podcasts, news channels — a patchwork of sources with no filter for what actually matters to them.
 
 AI Builder Brief asks you 8 questions about your world. Then it delivers a daily briefing — every item filtered through YOUR lens, with a "so what does this mean for ME" on every story.
 
