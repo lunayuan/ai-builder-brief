@@ -45,7 +45,7 @@ The magic is the onboarding. These questions shape everything — from what gets
 
 | # | Question | Why it matters |
 |---|----------|---------------|
-| 1 | What's your name? What do you do? | Personalizes your briefing header and frames insights through your role |
+| 1 | What's your name? What do you do? | Your name appears in the email subject ("AI Builder Brief for Luna") and header. Your role frames every insight. |
 | 2 | Why does AI matter to you? | Drives the "so what" on every item |
 | 3 | What AI topics to track? | Focuses the search |
 | 4 | What categories? | Organizes your briefing |
@@ -61,7 +61,7 @@ When you pick your topics, the agent asks a follow-up: *"Why is this important t
 - **Executive summary** — 3-5 biggest signals, scannable in 60 seconds
 - **News by category** — customizable sections tailored to your focus
 - **Personal implications** — every item filtered through your world ("This means X for what you're building")
-- **Source links** — every claim is verifiable, no hallucinated intelligence
+- **Source links** — every item links to the original source, inline and verifiable. No hallucinated intelligence.
 - **"What to Watch"** — forward-looking items for the coming days
 - **Deduplication** — never see the same story twice across editions
 
