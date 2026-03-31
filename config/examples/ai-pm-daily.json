@@ -1,0 +1,65 @@
+{
+  "mode": "personal",
+  "identity": {
+    "name": "Alex",
+    "description": "I'm a PM at a B2B SaaS startup, adding AI features to our product",
+    "why": "I want to know which AI tools my peers are adopting and how AI is changing the PM role"
+  },
+  "industry": {
+    "focus": ["AI for PMs", "AI products", "AI developer tools"],
+    "focusReasons": {
+      "AI for PMs": "I need to know what AI tools other PMs are using so I don't fall behind",
+      "AI products": "Understanding how other companies ship AI features informs my own product decisions",
+      "AI developer tools": "Our engineering team evaluates new AI dev tools weekly and I need to keep up"
+    },
+    "geography": "global"
+  },
+  "categories": [
+    {
+      "name": "AI for PMs",
+      "description": "AI tools, workflows, and practices specifically for product managers",
+      "searchHints": ["AI PM tools", "AI product management", "ChatPRD", "AI roadmap", "AI user research", "PM AI workflow"]
+    },
+    {
+      "name": "AI Products & Tools",
+      "description": "New AI product launches, major feature updates, and pricing changes worth knowing",
+      "searchHints": ["AI launch", "AI product", "AI tool", "LLM update", "AI feature", "AI pricing"]
+    },
+    {
+      "name": "AI Builders & Trends",
+      "description": "What top AI practitioners and thought leaders are saying about where AI is heading",
+      "searchHints": ["AI builder", "AI trend", "AI strategy", "AI thought leader", "AI prediction"]
+    }
+  ],
+  "watchList": {
+    "people": ["Tomer Cohen", "Boris Cherny", "Claire Vo", "Dan Shipper", "Ravi Mehta"],
+    "orgs": ["OpenAI", "Anthropic", "Google DeepMind", "Notion AI", "Linear"]
+  },
+  "sources": {
+    "curated": [
+      { "url": "https://www.lennysnewsletter.com", "name": "Lenny's Newsletter" },
+      { "url": "https://www.chatprd.ai/blog", "name": "ChatPRD Blog" }
+    ],
+    "preferredDomains": ["lennysnewsletter.com", "every.to", "producthunt.com"],
+    "lowConfidenceDomains": []
+  },
+  "schedule": {
+    "frequency": "daily",
+    "time": "07:00",
+    "timezone": "America/New_York"
+  },
+  "distribution": {
+    "method": "resend",
+    "author": "pm-user@example.com",
+    "recipients": ["pm-user@example.com"],
+    "resend": {
+      "envFile": "~/.ai-builder-brief/.env",
+      "envVar": "RESEND_API_KEY",
+      "fromAddress": "briefing@pm-user-domain.com",
+      "fromName": "AI PM Daily"
+    }
+  },
+  "briefingTitle": "AI PM Daily",
+  "tone": "casual",
+  "onboardingComplete": true
+}

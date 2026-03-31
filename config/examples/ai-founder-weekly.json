@@ -1,0 +1,72 @@
+{
+  "mode": "personal",
+  "identity": {
+    "name": "Sarah",
+    "description": "Solo founder building an AI tutoring platform for K-12 students",
+    "why": "I need to track competitors, funding rounds, and new AI education tools to stay ahead"
+  },
+  "industry": {
+    "focus": ["AI education tools", "AI startup funding", "AI growth & distribution"],
+    "focusReasons": {
+      "AI education tools": "Direct competitors and adjacent products that could eat my lunch or become partners",
+      "AI startup funding": "Tracking who's getting funded tells me where the market is moving and who I'll compete with next",
+      "AI growth & distribution": "As a solo founder I need every growth lever I can find"
+    },
+    "geography": "global"
+  },
+  "categories": [
+    {
+      "name": "AI Education & EdTech",
+      "description": "AI tutoring products, AI in schools, edtech launches, and policy changes affecting AI in education",
+      "searchHints": ["AI tutor", "AI education", "edtech AI", "K-12 AI", "AI learning", "Khanmigo", "AI classroom"]
+    },
+    {
+      "name": "AI Funding & Launches",
+      "description": "AI startup funding rounds, new AI company launches, and notable AI acquisitions",
+      "searchHints": ["AI funding", "AI startup", "AI seed round", "AI Series A", "AI acquisition", "AI launch"]
+    },
+    {
+      "name": "AI Growth & GTM",
+      "description": "Growth strategies, distribution tactics, and go-to-market moves in AI products",
+      "searchHints": ["AI growth", "AI distribution", "AI PLG", "AI GTM", "AI viral", "AI adoption"]
+    },
+    {
+      "name": "AI Builders",
+      "description": "What founders and builders are shipping, their lessons learned, and technical approaches",
+      "searchHints": ["AI builder", "AI founder", "AI indie hacker", "AI shipping", "AI side project"]
+    }
+  ],
+  "competitors": ["Khan Academy", "Duolingo", "Khanmigo"],
+  "watchList": {
+    "people": ["Sal Khan", "Grant Lee", "Elena Verna", "Ethan Smith"],
+    "orgs": ["Khan Academy", "Duolingo", "OpenAI", "Anthropic", "Y Combinator"]
+  },
+  "sources": {
+    "curated": [
+      { "url": "https://every.to", "name": "Every by Dan Shipper" },
+      { "url": "https://www.growthunhinged.com", "name": "Growth Unhinged" }
+    ],
+    "preferredDomains": ["every.to", "techcrunch.com", "edtechmagazine.com"],
+    "lowConfidenceDomains": []
+  },
+  "schedule": {
+    "frequency": "weekly",
+    "time": "08:00",
+    "timezone": "America/Los_Angeles",
+    "weeklyDay": "monday"
+  },
+  "distribution": {
+    "method": "resend",
+    "author": "founder@example-edtech.com",
+    "recipients": ["founder@example-edtech.com"],
+    "resend": {
+      "envFile": "~/.ai-builder-brief/.env",
+      "envVar": "RESEND_API_KEY",
+      "fromAddress": "briefing@example-edtech.com",
+      "fromName": "AI Founder Weekly"
+    }
+  },
+  "briefingTitle": "AI Founder Weekly",
+  "tone": "internal-memo",
+  "onboardingComplete": true
+}

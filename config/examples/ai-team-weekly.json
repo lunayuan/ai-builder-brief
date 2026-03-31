@@ -1,0 +1,81 @@
+{
+  "mode": "team",
+  "identity": {
+    "name": "Mark",
+    "description": "We build enterprise AI agents for customer support",
+    "why": "Our leadership needs to stay ahead of competitor moves and enterprise AI trends",
+    "company": {
+      "name": "Acme AI",
+      "description": "We build enterprise AI agents for customer support, serving mid-market and enterprise SaaS companies",
+      "audience": "Product, engineering, and GTM leadership",
+      "decisions": "Product roadmap prioritization, competitive positioning, partnership evaluation, pricing strategy"
+    }
+  },
+  "industry": {
+    "focus": ["AI enterprise applications", "AI agents", "AI competitor landscape"],
+    "focusReasons": {
+      "AI enterprise applications": "Our buyers are enterprise — we need to know what they're evaluating and adopting",
+      "AI agents": "Our core product is AI agents, so every advance or new entrant is directly relevant",
+      "AI competitor landscape": "Four well-funded competitors are shipping fast and we can't afford blind spots"
+    },
+    "geography": "global"
+  },
+  "categories": [
+    {
+      "name": "Enterprise AI",
+      "description": "Enterprise AI adoption, buyer trends, deployment patterns, and ROI data",
+      "searchHints": ["enterprise AI", "AI adoption", "AI ROI", "AI deployment", "AI buyer", "AI enterprise deal"]
+    },
+    {
+      "name": "AI Agents & Automation",
+      "description": "AI agent frameworks, autonomous AI, customer support AI, and agentic workflows",
+      "searchHints": ["AI agent", "AI automation", "agentic AI", "AI customer support", "AI workflow", "autonomous agent"]
+    },
+    {
+      "name": "Competitors",
+      "description": "Moves from Intercom Fin, Zendesk, Ada, and Forethought — launches, pricing, partnerships, funding",
+      "searchHints": ["Intercom Fin", "Zendesk AI", "Ada AI", "Forethought", "AI customer support competitor"]
+    },
+    {
+      "name": "AI Builders & Trends",
+      "description": "What AI leaders and builders are saying about the future of enterprise AI and agents",
+      "searchHints": ["AI builder", "AI trend", "AI prediction", "AI thought leader", "AI enterprise future"]
+    }
+  ],
+  "competitors": ["Intercom (Fin)", "Zendesk", "Ada", "Forethought"],
+  "watchList": {
+    "people": ["Eoghan McCabe", "Asha Sharma", "Bret Taylor"],
+    "orgs": ["Intercom", "Zendesk", "Ada", "Forethought", "OpenAI", "Anthropic", "Sierra AI"]
+  },
+  "sources": {
+    "curated": [],
+    "preferredDomains": ["techcrunch.com", "theinformation.com", "saastr.com"],
+    "lowConfidenceDomains": []
+  },
+  "schedule": {
+    "frequency": "weekly",
+    "time": "09:00",
+    "timezone": "America/New_York",
+    "weeklyDay": "monday"
+  },
+  "distribution": {
+    "method": "resend",
+    "author": "ceo@acme-ai.com",
+    "recipients": [
+      "team-lead@acme-ai.com",
+      "head-of-product@acme-ai.com",
+      "head-of-eng@acme-ai.com",
+      "head-of-gtm@acme-ai.com",
+      "ceo@acme-ai.com"
+    ],
+    "resend": {
+      "envFile": "~/.ai-builder-brief/.env",
+      "envVar": "RESEND_API_KEY",
+      "fromAddress": "intel@acme-ai.com",
+      "fromName": "Acme AI Builder Brief"
+    }
+  },
+  "briefingTitle": "Acme AI Weekly Intelligence",
+  "tone": "executive-brief",
+  "onboardingComplete": true
+}

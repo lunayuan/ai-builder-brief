@@ -1,0 +1,15 @@
+# User config and state (local only, never committed)
+.env
+CLAUDE.md
+state/*
+!state/.gitkeep
+
+# Dependencies
+node_modules/
+
+# Logs
+*.log
+
+# OS
+.DS_Store
+Thumbs.db

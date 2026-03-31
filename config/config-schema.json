@@ -1,0 +1,207 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "AI Builder Brief Configuration",
+  "description": "User configuration for the ai-builder-brief skill. Stored at ~/.ai-builder-brief/config.json",
+  "type": "object",
+  "required": ["mode", "identity", "industry", "categories", "schedule", "distribution"],
+  "properties": {
+    "mode": {
+      "type": "string",
+      "enum": ["personal", "team"],
+      "default": "personal",
+      "description": "Personal mode: briefing tailored to one person's role and interests. Team mode: briefing for a company/team with shared context."
+    },
+    "identity": {
+      "type": "object",
+      "description": "Who you are and why AI matters to you. Drives the 'so what' framing for every story.",
+      "required": ["name", "description", "why"],
+      "properties": {
+        "name": {
+          "type": "string",
+          "description": "Your first name. Used to personalize the briefing header and subject line (e.g., 'AI Builder Brief for Luna')"
+        },
+        "description": {
+          "type": "string",
+          "description": "One sentence about your role (personal) or team context (team). e.g., 'I'm a PM at a B2B SaaS startup, adding AI features to our product'"
+        },
+        "why": {
+          "type": "string",
+          "description": "Why AI intel matters to you. Shapes what gets surfaced and how it's framed. e.g., 'I need to track which AI tools my peers are adopting'"
+        },
+        "company": {
+          "type": "object",
+          "description": "Company details (team mode only). Omit for personal mode.",
+          "properties": {
+            "name": { "type": "string", "description": "Company name" },
+            "description": { "type": "string", "description": "What the company does, in one sentence" },
+            "audience": { "type": "string", "description": "Who reads this briefing (e.g., 'Engineering leadership')" },
+            "decisions": { "type": "string", "description": "What decisions readers make based on this intel" }
+          },
+          "required": ["name", "description"]
+        }
+      }
+    },
+    "industry": {
+      "type": "object",
+      "required": ["focus"],
+      "properties": {
+        "focus": {
+          "type": "array",
+          "items": { "type": "string" },
+          "description": "AI topic areas to track (e.g., ['AI agents', 'AI developer tools', 'AI regulation'])"
+        },
+        "focusReasons": {
+          "type": "object",
+          "description": "Maps each focus area to a reason string explaining why it matters. Keys should match items in focus[].",
+          "additionalProperties": { "type": "string" }
+        },
+        "geography": {
+          "type": "string",
+          "default": "global",
+          "description": "Geographic focus (e.g., 'North America', 'global')"
+        }
+      }
+    },
+    "categories": {
+      "type": "array",
+      "description": "News categories to monitor. Each gets its own section in the briefing.",
+      "items": {
+        "type": "object",
+        "required": ["name"],
+        "properties": {
+          "name": { "type": "string", "description": "Category display name" },
+          "description": { "type": "string", "description": "What this category covers" },
+          "searchHints": {
+            "type": "array",
+            "items": { "type": "string" },
+            "description": "Additional search terms for this category"
+          },
+          "enabled": { "type": "boolean", "default": true }
+        }
+      },
+      "default": [
+        { "name": "AI Products & Tools", "description": "New AI product launches, feature updates, pricing changes", "searchHints": ["AI launch", "AI product", "AI tool", "LLM", "foundation model"] },
+        { "name": "AI Builders & Trends", "description": "What top AI practitioners are saying, building, and shipping", "searchHints": ["AI builder", "AI trend", "AI thought leader", "AI strategy"] },
+        { "name": "AI Funding & Launches", "description": "AI startup funding rounds, acquisitions, new company launches", "searchHints": ["AI funding", "AI startup", "AI acquisition", "seed round", "Series A"] },
+        { "name": "AI Research & Models", "description": "New model releases, benchmark results, research breakthroughs", "searchHints": ["AI model", "benchmark", "GPT", "Claude", "open source model", "fine-tuning"] },
+        { "name": "AI Regulation & Policy", "description": "AI governance, regulation, safety, and policy developments", "searchHints": ["AI regulation", "AI policy", "AI safety", "AI governance", "AI ethics"] }
+      ]
+    },
+    "competitors": {
+      "type": "array",
+      "items": { "type": "string" },
+      "description": "Specific competitors to watch (optional, primarily for team mode)",
+      "default": []
+    },
+    "watchList": {
+      "type": "object",
+      "description": "People and organizations to actively track for AI-related activity",
+      "properties": {
+        "people": {
+          "type": "array",
+          "items": { "type": "string" },
+          "description": "Names of individuals to watch (e.g., 'Sam Altman', 'Dario Amodei')",
+          "default": []
+        },
+        "orgs": {
+          "type": "array",
+          "items": { "type": "string" },
+          "description": "Organizations to watch beyond competitors (e.g., 'OpenAI', 'Anthropic', 'Y Combinator')",
+          "default": []
+        }
+      }
+    },
+    "sources": {
+      "type": "object",
+      "properties": {
+        "curated": {
+          "type": "array",
+          "description": "Specific sources to always check (newsletters, blogs, podcasts)",
+          "items": {
+            "type": "object",
+            "required": ["url", "name"],
+            "properties": {
+              "url": { "type": "string", "description": "Source URL" },
+              "name": { "type": "string", "description": "Display name" },
+              "requiresAuth": { "type": "boolean", "default": false },
+              "notes": { "type": "string", "description": "Notes about access requirements" }
+            }
+          },
+          "default": []
+        },
+        "preferredDomains": {
+          "type": "array",
+          "items": { "type": "string" },
+          "description": "Domains to prefer in search results (e.g., ['techcrunch.com', 'theverge.com'])",
+          "default": []
+        },
+        "lowConfidenceDomains": {
+          "type": "array",
+          "items": { "type": "string" },
+          "description": "Domains to tag as [Low confidence]",
+          "default": []
+        }
+      }
+    },
+    "schedule": {
+      "type": "object",
+      "properties": {
+        "frequency": { "type": "string", "enum": ["daily", "weekly"], "default": "weekly" },
+        "time": { "type": "string", "default": "08:00", "description": "HH:MM in 24-hour format" },
+        "timezone": { "type": "string", "default": "America/New_York" },
+        "weeklyDay": { "type": "string", "enum": ["monday", "tuesday", "wednesday", "thursday", "friday", "saturday", "sunday"], "default": "monday" }
+      }
+    },
+    "distribution": {
+      "type": "object",
+      "required": ["method"],
+      "properties": {
+        "method": {
+          "type": "string",
+          "enum": ["gmail-draft", "local-file", "both", "resend", "resend+local"],
+          "default": "gmail-draft",
+          "description": "How to deliver the briefing. 'resend' sends via Resend API. 'resend+local' sends and saves a local copy."
+        },
+        "author": { "type": "string", "description": "Author email (receives dry-run editions)" },
+        "recipients": {
+          "type": "array",
+          "items": { "type": "string" },
+          "description": "Email addresses to receive the briefing",
+          "default": []
+        },
+        "outputDir": { "type": "string", "description": "Directory for local file output", "default": "~/Documents/ai-builder-brief/" },
+        "resend": {
+          "type": "object",
+          "description": "Resend API configuration. Required when method is 'resend' or 'resend+local'.",
+          "properties": {
+            "envFile": { "type": "string", "description": "Path to .env file containing the Resend API key", "default": "~/.ai-builder-brief/.env" },
+            "envVar": { "type": "string", "description": "Environment variable name for the Resend API key", "default": "RESEND_API_KEY" },
+            "fromAddress": { "type": "string", "description": "Sender email address (must be verified in Resend)" },
+            "fromName": { "type": "string", "description": "Sender display name (e.g., 'AI Builder Brief')" }
+          },
+          "required": ["fromAddress"]
+        }
+      }
+    },
+    "briefingTitle": {
+      "type": "string",
+      "default": "AI Builder Intelligence Briefing",
+      "description": "Custom subject line prefix"
+    },
+    "tone": {
+      "type": "string",
+      "enum": ["internal-memo", "executive-brief", "analyst-note", "casual"],
+      "default": "internal-memo"
+    },
+    "driveSearch": {
+      "type": "object",
+      "description": "Optional Google Drive integration for internal context",
+      "properties": {
+        "enabled": { "type": "boolean", "default": false },
+        "folderIds": { "type": "array", "items": { "type": "string" } },
+        "keywords": { "type": "array", "items": { "type": "string" } }
+      }
+    },
+    "onboardingComplete": { "type": "boolean", "default": false }
+  }
+}
