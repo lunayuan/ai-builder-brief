@@ -8,7 +8,9 @@ AI Builder Brief fixes that. It asks you 8 questions about your world, then deli
 
 Built for people who build with AI. Not for people who just talk about it.
 
-**[See a sample briefing](https://htmlpreview.github.io/?https://github.com/lunayuan/ai-builder-brief/blob/master/examples/sample-briefing.html)**
+![Sample Briefing](examples/briefing-screenshot.png)
+
+**[See the full interactive sample](https://htmlpreview.github.io/?https://github.com/lunayuan/ai-builder-brief/blob/master/examples/sample-briefing.html)**
 
 ## Quick Start
 
