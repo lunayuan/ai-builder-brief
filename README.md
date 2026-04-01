@@ -12,6 +12,18 @@ Built for people who build with AI. Not for people who just talk about it.
 
 **[See the full interactive sample](https://htmlpreview.github.io/?https://github.com/lunayuan/ai-builder-brief/blob/master/examples/sample-briefing.html)**
 
+## Runs on Autopilot
+
+Once set up, AI Builder Brief uses **Claude Code's built-in scheduling feature** to send your briefing automatically — no manual triggers, no cron jobs, no scripts.
+
+During onboarding, the skill registers a scheduled task directly inside Claude Code. From then on, Claude Code wakes up on your chosen schedule, runs the full search-and-synthesis workflow, and delivers the briefing to your inbox. You don't have to do anything.
+
+```
+Set up once → briefing arrives in your inbox every morning
+```
+
+This is powered by Claude Code's native `/schedule` capability. The scheduled task lives in your Claude Code environment and runs even when you're not in a session.
+
 ## What It Scans For
 
 Every edition automatically searches for what matters most to AI builders:
@@ -38,6 +50,8 @@ These are the defaults. You can add, remove, or rename categories during setup �
 2. In Claude Code, say **"set up ai builder brief"** or type `/ai-builder-brief`
 
 3. Answer 8 questions. Your first briefing generates immediately.
+
+4. The skill registers a **scheduled task** in Claude Code — your briefing will now run automatically on your chosen schedule (daily, weekly) without any further action from you.
 
 No config files. No code. The agent walks you through everything in conversation.
 
