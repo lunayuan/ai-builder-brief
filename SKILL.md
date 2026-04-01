@@ -244,9 +244,15 @@ Follow `prompts/search-queries.md` to construct queries.
 
 For each enabled category in `config.categories[]`:
 1. Construct 2 WebSearch queries from `config.industry.focus` + category `searchHints` + date qualifier
-2. For watch list items, inject `config.watchList.people[]` and `config.watchList.orgs[]` names into relevant categories
-3. Execute the searches via WebSearch
-4. Collect results with URLs
+2. Execute the searches via WebSearch
+3. Collect results with URLs
+
+**Watch list categories (id contains "builders" or "trends" or "people"):**
+Any category whose purpose is to surface what specific people and orgs are doing (e.g. "AI Builders & Trends", "Builder Voices") must be searched differently:
+- Do NOT use generic AI news queries for this category
+- Instead, search directly by name: `"[Person Name]" announcement OR launch OR published 2026` for people; `"[Org Name]" launch OR shipped OR announced 2026` for orgs
+- Run 2 searches: one batching 4-5 people from `config.watchList.people[]`, one batching 3-4 orgs from `config.watchList.orgs[]`
+- Items must trace back to something that person or org actually did, said, or published — not general industry news about the space they work in
 
 **Budget:** Max 2 searches per category. Execute categories sequentially. Wait 5 seconds between categories if rate-limited.
 
