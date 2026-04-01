@@ -54,6 +54,7 @@ Key styling rules:
 - **Source link:** Grayed out (`color:#9ca3af`), inline at the end of the summary text, smaller font (13px). NOT the category accent color. This keeps source attribution visible but unobtrusive.
 - **Implication line:** Uses the category accent color, italicized, on its own line below the summary.
 - **Headline:** Bold, default text color (#1a1a1a).
+- **Special characters:** Always use HTML entities for non-ASCII characters. Em dashes must be `&mdash;` (never the literal `—` character). Smart quotes must be `&ldquo;` / `&rdquo;`. This prevents garbled characters (`â€"`) in email clients that ignore the charset declaration.
 
 If an item is low confidence, prefix headline with: `[Low confidence]`
 
