@@ -24,6 +24,8 @@ Every edition automatically searches for what matters most to AI builders:
 
 **Builder Voices** — Notable quotes and takes from the builders on your watch list. What are Andrej Karpathy, Sam Altman, and the people you follow actually saying this week? Not news *about* them — their own words, opinions, and predictions.
 
+**AI for Good** — AI applied to education, climate change, coaching, and social impact. Who's using AI to solve real problems beyond productivity? Track the builders and orgs making AI work for people, not just profits.
+
 These are the defaults. You can add, remove, or rename categories during setup — or later, just by telling your agent.
 
 ## Quick Start
